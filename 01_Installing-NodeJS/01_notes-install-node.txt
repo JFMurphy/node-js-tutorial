@@ -1,4 +1,5 @@
 Notes
+
 1. Install node from nodejs.org
 2. Check node is installed from the command prompt
     > node -v
