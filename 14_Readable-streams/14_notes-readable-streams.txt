@@ -17,7 +17,7 @@ Creating a read stream
 1. Create a readme.txt and fill it with lorem ipsum
 2. Use method createReadStream
     > myReadStream = fs.createReadStream()
-    2.1 As params passthrough the path to the file to be read.
+    2.1 As a param, pass through the path to the file to be read.
         > __dirname + '/readme.txt'
 3. This will create a read stream that will read the data a small bit at a time. It will fill up a buffer to pass it along in chunks.
 4. We can recognise when we receive a piece of the stream.
