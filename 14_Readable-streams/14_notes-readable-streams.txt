@@ -34,5 +34,5 @@ Creating a read stream
 9. Log the chunk itself to the console.
 10. Running this code will return only the buffer not the text.
 11. To return text the character encoding must be provided when creating the read stream.
-    >fs.createReadStream(*path*, *encoding*); (For text, encoding should be utf8)
+    > fs.createReadStream(*path*, *encoding*); (For text, encoding should be utf8)
 12. In comparison to previous tutorial when readFile() was used it grabbed the entire file an returned it instead of grabbing it in parts and returning those over time.
