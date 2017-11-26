@@ -10,3 +10,6 @@ To install express:
 1. In the command line run the following command:
     > npm install express
 2. This command should be run in the folder of the application that you will be building.
+3. This will add a folder called node_modules to the root folder, which will be filled with the packages that are currently installed and their dependencies.
+4. To uninstall the express package: 
+    > npm uninstall express
