@@ -35,4 +35,4 @@ The url property of the request object can be used to check what url the client 
 11. Create a 404 html file.
 12. Send the file as a response to the client as done previously.
 
-A node package called express can be used to make routing a lot eas
+A node package called express can be used to make routing a lot easier.
