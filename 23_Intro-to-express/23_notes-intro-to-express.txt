@@ -1,0 +1,8 @@
+Notes - Introduction to Express
+
+Easy and flexible routing system
+Integrates with many templating engines
+    - Makes it easier to develop frontends to applications.
+Contains a middleware framework
+    - Other Node package can extend the framework
+

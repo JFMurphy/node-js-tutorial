@@ -1,0 +1,26 @@
+{
+  "name": "23_intro-to-express",
+  "version": "1.0.0",
+  "description": "Part 23 of NodeJS tutorial",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/JFMurphy/node-js-tutorial.git"
+  },
+  "keywords": [
+    "tutorial",
+    "net-ninja",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "John-Francis",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/JFMurphy/node-js-tutorial#readme"
+}
