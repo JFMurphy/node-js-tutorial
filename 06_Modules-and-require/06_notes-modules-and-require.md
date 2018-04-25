@@ -1,11 +1,12 @@
-Notes - Modules and require
+# Notes - Modules and require
 
 Application code is not all put in one file.
 Code is split into modules that each provide certain functionality.
-Example:
-    Create a module for counting.
-    Call on this module only when needed.
-    A module is an additional JS file.
+Example:  
+- Create a module for counting.  
+- Call on this module only when needed.  
+- A module is an additional JS file.
+#
 
 1. Create a file called count.js
 2. Create var 'counter'
@@ -16,8 +17,10 @@ Example:
 7. To use this function in other files in the app we need to use the 'require' function
     7.1. This is on the global object.
 8. Write:
-    > require(*path to module*)
-    > require(./count) ('./' refers to current directory. '.js' is not needed.)
+    ```javascript
+        require(*path to module*)
+        require('./count') ('./' refers to current directory.  '.js' is not needed.)
+    ```
 9. Methods in a module are not available until they are explictly provided in the module.
 10. The method in count.js needs to be exported to be made available in the app.js file.
     > module.exports = counter;

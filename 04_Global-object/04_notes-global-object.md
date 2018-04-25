@@ -1,4 +1,4 @@
-Notes - The Global Object
+# Notes - The Global Object
 
 The global object is the window object
     Properties can be accessed on that window object.

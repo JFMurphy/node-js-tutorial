@@ -1,4 +1,4 @@
-Notes - Install Node
+# Notes - Install Node
 
 1. Install node from nodejs.org
 2. Check node is installed from the command prompt
