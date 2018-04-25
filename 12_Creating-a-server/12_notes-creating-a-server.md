@@ -1,8 +1,8 @@
 Notes - Creating a Server
 
-Make a server
-Make request to server
-Deal with request in NodeJS
+- Make a server  
+- Make request to server  
+- Deal with request in NodeJS
 
 1. Make var named http and store the http module in it.
     ```javascript
