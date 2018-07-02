@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 
 app.get('/contact', function (req, res) {
     console.log(req.query);
-    
+    // qs means querystring
     res.render('contact', {qs: req.query});
 });
 
