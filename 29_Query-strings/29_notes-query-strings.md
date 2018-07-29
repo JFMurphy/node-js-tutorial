@@ -3,11 +3,11 @@
 A query string is additional data added on to a http request in the form of name-value pairs.
 To construct a name-value pair a question mark is added to the end of a URL and followed by the name-value pair which can be seperated by ampersands if there are more than one.
 
-*Example:*
-mysite.com/blog/news?page=2
+*Example:*  
+mysite.com/blog/news?page=2  
 The ```?``` indicates the start of the query.
 
-mysite.com/contact?person=ryu&dept=marketing
+mysite.com/contact?person=ryu&dept=marketing  
 The ```&``` seperates two different name-value pairs.
 
 1. When express is used the request object can parse the query string for us.
