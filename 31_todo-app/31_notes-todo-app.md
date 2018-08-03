@@ -162,3 +162,8 @@
         res.json(data);
         ```
     - Once the data is received the page is reloaded and the code in the ejs template is re-run and will include the new item.
+
+6. Deleting items
+    - When a li element is clicked a function is called which will make a var called item that is set to the item value with the spaces replaced with hyphens.
+    - The ajax DELETE request is sent to the '/todo/{item}' route, which is handled by the 'app.delete()' method.
+    - This method
