@@ -103,4 +103,62 @@
     - Require jQuery
     - Include stylessheet in assests folder.
         - Express middleware means you only need to reference from the public folder.
-    
+    - In the body create a form for adding an item to the list.
+        - Text box for text
+        - Button for submit
+        - Div->form->input+button
+    - Make a list of dummy content
+2. Render in '/todo' get handler
+    ```js
+    res.render('todo');
+    ```
+
+## Part 4
+
+1. Add dummy data at the top of the controller file
+    ```js
+    var data = [{item: 'milk'}, {itme: 'do something'}, {item: 'more stuff'}];
+    ```
+2. Pass the data into the view.
+    - Pass into a second parameter in the render method
+        ```js
+        res.render('todo', {todos: data});
+        ```
+    - The data is passed through to the view by the 'todos' property name.
+
+3. Adding items to the list dynamically
+    - Adding and deleting items will be controlled by ajax requests.
+    - When the form button is clicked the item var is set to the form input value and a todo var is created which is an object in which the 'item' property is set to the var 'item' value.
+    - In summary whatever is typed into the form will be stored in the 'item' property of an object 'todo'.
+    - This object will eventually be appended to the data object in the controller.
+    - This is all in the todo-list.js file.
+
+4. Ajax POST
+    - When the ajax POST request is made it is handled with the 'app.post()' method in the controller.
+    - The ajax POST request sends data to the handler which in this case is the 'todo' object.
+    - When the recieved data has been processed it is sent back to the ajax request and the view is reloaded to reflect the changes.
+
+5. Handling adding items.
+    - The bodyParser module needs to be required.
+        ```js
+        var bodyParser = require('body-parser');
+        ```
+    - Set up url parser
+        ```js
+        var urlencodedParser = bodyParser.urlencoded({extended: false});
+        ```
+    - Add this middleware as a parameter in the post method
+        ```js
+        app.post('/todo', urlencodedParser, function(req, res){
+            code goes here
+        });
+        ```
+    - Push received data to the data array in the controller. The recieved data is on the request body.
+        ```js
+        data.push(req.body);
+        ```
+    - Send the updated data array back as JSON
+        ```js
+        res.json(data);
+        ```
+    - Once the data is received the page is reloaded and the code in the ejs template is re-run and will include the new item.

@@ -5,20 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Todo List</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/assests/styles.css" />
-
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/assets/todo-list.js"></script>
 </head>
 <body>
 
+    <h1>List</h1>
+
     <div id="todo-table">
+
         <form action="">
             <input type="text" name="item" placeholder="Add new item..." required />
-            <button type="submit">Save</button>
+            <button type="submit">Add item</button>
         </form>
+        <ul>
+            <% for(var i=0; i < todos.length; i++) { %>
+                <li><%= todos[i].item %></li>
+            <%} %>
+        </ul>
+
     </div>
     
+    <!-- jQuery -->
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 </html>
